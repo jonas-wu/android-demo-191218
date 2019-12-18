@@ -1,0 +1,20 @@
+ext {
+    println('1111111111')
+    if (!project.hasProperty('JK_VERSION_CODE')) {
+        JK_VERSION_CODE = 2
+    } else {
+        JK_VERSION_CODE = JK_VERSION_CODE
+    }
+
+    if (!project.hasProperty('JK_VERSION_NAME')) {
+        JK_VERSION_NAME = '2.0'
+    } else {
+        JK_VERSION_NAME = JK_VERSION_NAME
+    }
+
+    if (!project.hasProperty('JK_IS_DEBUG')) {
+        JK_IS_DEBUG = false
+    } else {
+        JK_IS_DEBUG = JK_IS_DEBUG
+    }
+}
