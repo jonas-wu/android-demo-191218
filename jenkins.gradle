@@ -1,5 +1,5 @@
 ext {
-    println('1111111111')
+//    println('1111111111')
     if (!project.hasProperty('JK_VERSION_CODE')) {
         JK_VERSION_CODE = 2
     } else {

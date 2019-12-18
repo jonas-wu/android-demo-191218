@@ -2,8 +2,11 @@ apply plugin: 'com.android.application'
 
 apply from: '../jenkins.gradle'
 
-JK_VERSION_CODE = ext.JK_VERSION_CODE
+JK_VERSION_CODE = ext.JK_VERSION_CODE.toInteger()
 JK_VERSION_NAME = ext.JK_VERSION_NAME
+
+println('JK_VERSION_CODE=' + JK_VERSION_CODE)
+println('JK_VERSION_NAME=' + JK_VERSION_NAME)
 
 android {
     compileSdkVersion 29
